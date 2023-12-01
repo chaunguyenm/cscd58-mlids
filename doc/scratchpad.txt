@@ -1,0 +1,25 @@
+tcpdump to capture packet and Wireshark/tshark to extract information ---> not enough data
+Cic flow meter
+
+Dataset: https://www.unb.ca/cic/datasets/ids-2018.html
+https://www.kaggle.com/datasets/solarmainframe/ids-intrusion-csv/data
+
+https://journalofbigdata.springeropen.com/articles/10.1186/s40537-020-00382-x
+
+Python script to process data
+Python script to analyze data
+Python script to report
+
+CICFlowMeter: https://ask.wireshark.org/question/30771/how-to-setup-cicflowmeter-on-ubuntu/
+CICFlowMeter GitHub: https://github.com/ahlashkari/CICFlowMeter
+
+Machine learning: 
+
+https://arxiv.org/pdf/2307.11544.pdf
+
+- data processing: https://cybersecurity.springeropen.com/articles/10.1186/s42400-021-00103-8
+
+- handle imbalance: https://imbalanced-learn.org/stable/under_sampling.html
+
+- model persistence: https://scikit-learn.org/stable/model_persistence.html
+https://skops.readthedocs.io/en/stable/persistence.html
