@@ -1,0 +1,15 @@
+services:
+  cic-flowmeter:
+    image: maybehelloworld/cicflowmeter:latest
+    build: ./cic-flowmeter
+    entrypoint: /bin/bash
+    volumes:
+      - ./data/raw:/tmp/raw
+      - ./data/analyzed:/tmp/analyzed
+    command: -c "ls /tmp/raw/*.pcap | parallel java -Djava.library.path=/CICFlowMeter/jnetpcap/linux/jnetpcap-1.4.r1425/ -jar build/libs/CICFlowMeter-4.0.jar {} /tmp/analyzed/"
+
+    
+  ml-ids:
+    build: ./ml-ids
+    volumes:
+      - ./data:/usr/src/app/tmp
